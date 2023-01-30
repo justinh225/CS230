@@ -1,6 +1,5 @@
 .bcolor {
     color: #DBDDDF;
-    border-style: hidden;
 }
 
 .button-hover:hover {
@@ -17,4 +16,8 @@
 
 .dgroup {
     float: left;
+}
+
+.search-style {
+    background-color: #316282;
 }
