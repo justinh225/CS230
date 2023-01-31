@@ -37,15 +37,70 @@
     background-color: #30506E;
 }
 
-.your-store-size {
-    font-size: 15px;
-    width: 96.13px;
+.new-note-size {
+    font-size: 12px;
+    width: 145.46px;
     height: 35px;
+    margin: 0px;
 }
 
-.new-note-size {
-    font-size: 15px;
-    width: 134.47px;
+.categories-size {
+    font-size: 12px;
+    width: 97.85px;
     height: 35px;
+    margin: 0px;
+}
+
+.points-size {
+    font-size: 12px;
+    width: 107.84px;
+    height: 35px;
+    margin: 0px;
+}
+
+.labs-size {
+    font-size: 12px;
+    width: 62.35px;
+    height: 40px;
+    margin: 0px;
+}
+
+.news-size {
+    font-size: 12px;
+    width: 65.96px;
+    height: 35px;
+    margin: 0px;
+}
+
+.navbar-size {
+    width: 820px;
+    height: 45px;
+    margin-left: 350px;
+    margin-top: 30px;
+}
+
+.store-size {
+    width: 96.11px;
+    height: 35px;
+    font-size: 12px;
+    margin: 0px;
+    border-style: square;
+}
+.search-size {
+    font-size: 12px;
+    width: 210px;
+    height: 25px;
+    margin: 0;
+}
+
+.search-button {
+    height: 35px;
+    width: 35px;
+    margin-right: 0px;
+}
+
+.zero-margin {
+    margin: 0px;
+    margin-top: 0px;
 }
 
