@@ -20,4 +20,32 @@
 
 .search-style {
     background-color: #316282;
+    border-style: none;
+    border-color: #539AC5;
 }
+
+.search-hover:hover {
+    border-color: #539AC5;
+    border-style: solid;
+}
+
+.search-button-style {
+    background-color: #539AC5;
+}
+
+.mag-color {
+    background-color: #30506E;
+}
+
+.your-store-size {
+    font-size: 15px;
+    width: 96.13px;
+    height: 35px;
+}
+
+.new-note-size {
+    font-size: 15px;
+    width: 134.47px;
+    height: 35px;
+}
+
