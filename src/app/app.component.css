@@ -1,0 +1,5 @@
+.global {
+    background-image: linear-gradient(90deg, #193D54, #1b2838);
+    min-height: 100vh;
+    min-width: 100vh;
+}

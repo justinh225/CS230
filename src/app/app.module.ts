@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TopNavBarComponent } from './TopNavigation/top-nav-bar/top-nav-bar.component';
 import { TopNavigationTwoComponent } from './TopNavigation/top-navigation-two/top-navigation-two.component';
 import { BottomNavBarComponent } from './BottomNavigation/bottom-nav-bar/bottom-nav-bar.component';
+import { CarouseloneComponent } from './carousels/carouselone/carouselone.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavBarComponent,
     TopNavigationTwoComponent,
-    BottomNavBarComponent
+    BottomNavBarComponent,
+    CarouseloneComponent
   ],
   imports: [
     BrowserModule,
