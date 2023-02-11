@@ -1,4 +1,4 @@
-.bcolor {
+.button-color {
     color: #DBDDDF;
 }
 
@@ -8,9 +8,11 @@
 
 .navbarprop {
     background-image: linear-gradient(110deg, #395F8A, #0F216E);
+    width: 820px;
+    height: 45px;
 }
 
-.dcolor {
+.dropdown-color {
     background-image: linear-gradient(320deg, #2c2f36, #515f6f);
 }
 
@@ -22,6 +24,10 @@
     background-color: #316282;
     border-style: none;
     border-color: #539AC5;
+    font-size: 12px;
+    width: 210px;
+    height: 25px;
+    margin: 0;
 }
 
 .search-hover:hover {
@@ -72,25 +78,12 @@
     margin: 0px;
 }
 
-.navbar-size {
-    width: 820px;
-    height: 45px;
-    margin-left: 350px;
-    margin-top: 30px;
-}
-
 .store-size {
     width: 96.11px;
     height: 35px;
     font-size: 12px;
     margin: 0px;
     border-style: square;
-}
-.search-size {
-    font-size: 12px;
-    width: 210px;
-    height: 25px;
-    margin: 0;
 }
 
 .search-button {
