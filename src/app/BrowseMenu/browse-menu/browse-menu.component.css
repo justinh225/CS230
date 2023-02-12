@@ -1,3 +1,5 @@
-.p-3 {
-    padding: 10% !important;
+.button-style {
+    background-image: linear-gradient(90deg,#07BDFF, #2C74FF);
+    color: #e5e5e5;
 }
+
