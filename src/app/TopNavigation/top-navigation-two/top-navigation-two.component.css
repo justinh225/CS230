@@ -1,6 +1,4 @@
-.button-color {
-    color: #DBDDDF;
-}
+
 
 .button-hover:hover {
     background-image: linear-gradient(90deg, #4890C2, transparent);
@@ -8,10 +6,6 @@
 
 .dropdown-color {
     background-image: linear-gradient(320deg, #2c2f36, #515f6f);
-}
-
-.dgroup {
-    float: left;
 }
 
 .search-style {
