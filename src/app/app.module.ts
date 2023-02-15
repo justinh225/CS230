@@ -9,6 +9,7 @@ import { BottomNavBarComponent } from './BottomNavigation/bottom-nav-bar/bottom-
 import { CarouseloneComponent } from './Carousels/carouselone/carouselone.component';
 import { SideMenuComponent } from './SideMenu/side-menu/side-menu.component';
 import { BrowseMenuComponent } from './BrowseMenu/browse-menu/browse-menu.component';
+import { CardComponent } from './Card/card/card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BrowseMenuComponent } from './BrowseMenu/browse-menu/browse-menu.compon
     BottomNavBarComponent,
     CarouseloneComponent,
     SideMenuComponent,
-    BrowseMenuComponent
+    BrowseMenuComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
