@@ -1,11 +1,18 @@
 <div class="global">
     <app-top-nav-bar> </app-top-nav-bar>
-    <app-side-menu> </app-side-menu>
-    <div class="container">
-        <app-card></app-card>
-        <app-top-navigation-two> </app-top-navigation-two>
-        <app-browse-menu> </app-browse-menu>
-        <app-carouselone>BROWSE BY CATEGORY</app-carouselone>  
+    <div class="row">
+        <div class="col-7 mx-auto">
+            <div class="row">
+                <div class="col-1">
+                    <app-side-menu></app-side-menu>
+                </div>
+                <div class="col-11">
+                    <app-top-navigation-two> </app-top-navigation-two>
+                    <app-browse-menu></app-browse-menu>
+                    <app-carouselone></app-carouselone>
+                </div>
+            </div>    
+        </div>   
     </div>
     <app-bottom-nav-bar> </app-bottom-nav-bar>
 </div>
