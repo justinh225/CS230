@@ -1,20 +1,10 @@
-
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" >
       <div class="row" style="height: max-content;">
-        <div class="col-3 mx-auto">
-          <app-card class="d-flex justify-content-center"></app-card>
-        </div>
-        <div class="col-3">
-          <app-card class="d-flex justify-content-center"> </app-card>
-        </div>
-        <div class="col-3">
-          <app-card class="d-flex mx-auto justify-content-center"> </app-card>
-        </div>
-        <div class="col-3 mx-auto">
-          <app-card class="d-flex justify-content-center"> </app-card>
-        </div>
+        <li *ngFor="let card of cards">
+          <app-card image={{card.image}} color={{card.color}} type={{card.type}}> </app-card>
+        </li>
       </div>
     </div>
   </div>
