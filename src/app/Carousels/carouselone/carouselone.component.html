@@ -2,27 +2,39 @@
   <div class="carousel-inner">
     <div class="carousel-item active" >
       <div class="row" style="height: max-content;">
-        <li *ngFor="let card of cards">
+        <li class="col-3" *ngFor="let card of cards | slice:0:4">
           <app-card image={{card.image}} color={{card.color}} type={{card.type}}> </app-card>
         </li>
       </div>
     </div>
+  <div class="carousel-item" >
+    <div class="row" style="height: max-content;">
+      <li class="col-3" *ngFor="let card of cards | slice:4:8">
+        <app-card image={{card.image}} color={{card.color}} type={{card.type}}> </app-card>
+      </li>
+    </div>
   </div>
   <div class="carousel-item" >
     <div class="row" style="height: max-content;">
-      <div class="col-3 mx-auto">
-        <app-card class="d-flex justify-content-center"></app-card>
-      </div>
-      <div class="col-3">
-        <app-card class="d-flex justify-content-center"> </app-card>
-      </div>
-      <div class="col-3">
-        <app-card class="d-flex mx-auto justify-content-center"> </app-card>
-      </div>
-      <div class="col-3 mx-auto">
-        <app-card class="d-flex justify-content-center"> </app-card>
-      </div>
+      <li class="col-3" *ngFor="let card of cards | slice:8:12">
+        <app-card image={{card.image}} color={{card.color}} type={{card.type}}> </app-card>
+      </li>
     </div>
+  </div>
+  <div class="carousel-item" >
+    <div class="row" style="height: max-content;">
+      <li class="col-3" *ngFor="let card of cards | slice:12:16">
+        <app-card image={{card.image}} color={{card.color}} type={{card.type}}> </app-card>
+      </li>
+    </div>
+  </div>
+  <div class="carousel-item" >
+    <div class="row" style="height: max-content;">
+      <li class="col-3" *ngFor="let card of cards | slice:16:20">
+        <app-card image={{card.image}} color={{card.color}} type={{card.type}}> </app-card>
+      </li>
+    </div>
+  </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
