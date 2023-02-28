@@ -10,6 +10,8 @@ import { CarouseloneComponent } from './Carousels/carouselone/carouselone.compon
 import { SideMenuComponent } from './SideMenu/side-menu/side-menu.component';
 import { BrowseMenuComponent } from './BrowseMenu/browse-menu/browse-menu.component';
 import { CardComponent } from './Card/card/card.component';
+import { NowAvailableOnSteamComponent } from './SideBarRouting/now-available-on-steam.component';
+import { Home } from './Home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { CardComponent } from './Card/card/card.component';
     CarouseloneComponent,
     SideMenuComponent,
     BrowseMenuComponent,
-    CardComponent
+    CardComponent,
+    NowAvailableOnSteamComponent,
+    Home
   ],
   imports: [
     BrowserModule,

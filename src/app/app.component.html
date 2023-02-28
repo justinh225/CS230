@@ -1,24 +1,5 @@
-<div class="global">
-    <app-top-nav-bar> </app-top-nav-bar>
-    <div class="row">
-            <div class="row">
-                <div class="col-2">
-                    <app-side-menu></app-side-menu>
-                </div>
-                <div class="col-8">
-                    <div class="row">
-                        <app-top-navigation-two> </app-top-navigation-two>
-                    </div>
-                    <div class="row" style="height: 10%;">
-                        <div style="color: aliceblue;">BROWSE STEAM</div>
-                        <app-browse-menu> </app-browse-menu>
-                    </div>
-                    <div class="row" style="height:90%;">
-                        <app-carouselone></app-carouselone>
-                    </div>
-                </div>
-                <div class="col-2"></div>
-            </div>    
-    </div>
-    <app-bottom-nav-bar> </app-bottom-nav-bar>
+<app-top-nav-bar> </app-top-nav-bar> 
+<div class="row" style="background-image: linear-gradient(90deg, #193D54, #1b2838);">
+    <router-outlet> </router-outlet>     
 </div>
+<app-bottom-nav-bar> </app-bottom-nav-bar>
