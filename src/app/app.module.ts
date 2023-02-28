@@ -12,6 +12,10 @@ import { BrowseMenuComponent } from './BrowseMenu/browse-menu/browse-menu.compon
 import { CardComponent } from './Card/card/card.component';
 import { NowAvailableOnSteamComponent } from './SideBarRouting/now-available-on-steam.component';
 import { Home } from './Home/home.component';
+import { Support } from './TopNavBarRouting/support.component';
+import { Tags } from './SideBarRouting/tags.component';
+import { TopSellers } from './SideBarRouting/top-sellers.component';
+import { NewReleases } from './SideBarRouting/new-releases.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { Home } from './Home/home.component';
     BrowseMenuComponent,
     CardComponent,
     NowAvailableOnSteamComponent,
-    Home
+    Home,
+    Support,
+    Tags,
+    TopSellers,
+    NewReleases
   ],
   imports: [
     BrowserModule,
