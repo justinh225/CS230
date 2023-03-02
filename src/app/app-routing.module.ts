@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Home } from './Home/home.component';
-import { NowAvailableOnSteamComponent } from './SideBarRouting/now-available-on-steam.component';
-import { Support } from './TopNavBarRouting/support.component';
-import { Tags } from './SideBarRouting/tags.component';
-import { TopSellers } from './SideBarRouting/top-sellers.component';
-import { NewReleases } from './SideBarRouting/new-releases.component';
+import { NewReleases } from './SideBarRouting/NewReleasesComponent/new-releases.component';
+import { NowAvailableOnSteamComponent } from './SideBarRouting/NowAvailableComponent/now-available-on-steam.component';
+import { Tags } from './SideBarRouting/TagsComponent/tags.component';
+import { TopSellers } from './SideBarRouting/TopSellersComponent/top-sellers.component';
+import { Support } from './TopNavBarRouting/SupportComponent/support.component';
+
+
 
 const routes: Routes = [
   {path: '', component: Home},

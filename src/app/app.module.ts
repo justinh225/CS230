@@ -10,12 +10,12 @@ import { CarouseloneComponent } from './Carousels/carouselone/carouselone.compon
 import { SideMenuComponent } from './SideMenu/side-menu/side-menu.component';
 import { BrowseMenuComponent } from './BrowseMenu/browse-menu/browse-menu.component';
 import { CardComponent } from './Card/card/card.component';
-import { NowAvailableOnSteamComponent } from './SideBarRouting/now-available-on-steam.component';
+import { NowAvailableOnSteamComponent } from './SideBarRouting/NowAvailableComponent/now-available-on-steam.component';
 import { Home } from './Home/home.component';
-import { Support } from './TopNavBarRouting/support.component';
-import { Tags } from './SideBarRouting/tags.component';
-import { TopSellers } from './SideBarRouting/top-sellers.component';
-import { NewReleases } from './SideBarRouting/new-releases.component';
+import { Support } from './TopNavBarRouting/SupportComponent/support.component';
+import { Tags } from './SideBarRouting/TagsComponent/tags.component';
+import { TopSellers } from './SideBarRouting/TopSellersComponent/top-sellers.component';
+import { NewReleases } from './SideBarRouting/NewReleasesComponent/new-releases.component';
 
 @NgModule({
   declarations: [
