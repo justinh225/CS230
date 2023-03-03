@@ -16,6 +16,8 @@ import { Support } from './TopNavBarRouting/SupportComponent/support.component';
 import { Tags } from './SideBarRouting/TagsComponent/tags.component';
 import { TopSellers } from './SideBarRouting/TopSellersComponent/top-sellers.component';
 import { NewReleases } from './SideBarRouting/NewReleasesComponent/new-releases.component';
+import { SupportButton } from './TopNavBarRouting/SupportComponent/ButtonComponent/support-button.component';
+import { SupportButtonTwo } from './TopNavBarRouting/SupportComponent/ButtonTwoComponent/support-button-two.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { NewReleases } from './SideBarRouting/NewReleasesComponent/new-releases.
     Support,
     Tags,
     TopSellers,
-    NewReleases
+    NewReleases,
+    SupportButton,
+    SupportButtonTwo
   ],
   imports: [
     BrowserModule,
