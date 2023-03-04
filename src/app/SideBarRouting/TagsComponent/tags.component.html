@@ -1,3 +1,24 @@
-<div class="row">
-    <h1>This is the Tags page</h1>
+<div class="row" style="background-image: linear-gradient(180deg, #194561, #1B2838);">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <app-top-navigation-two> </app-top-navigation-two>
+        <div class="row">
+          <h1 style="color: aliceblue;">POPULAR TAGS</h1>
+            <p class="text" style="color: aliceblue;">Browse by the most popular tags applied to products, listed in order of how frequently they have been applied.</p>
+            <p class="text" style="color: aliceblue;">Click here to learn about tagging items on steam</p>  
+        </div>
+        <div class="row">
+            <p class="text" style="color: aliceblue;">These are tags that you’ve applied at least once, in order of how frequently you have applied them. The products listed for a selected tag will include products tagged with that term by anyone in the community.</p>
+            
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-9">
+                <li *ngFor="let tagbutton of tagButtons">
+                    <app-tags-button tag={{tagbutton.tag}}></app-tags-button>
+                </li>
+            </div>
+        </div>
+    </div>
+    <div class="col-2"></div>
 </div>
