@@ -21,6 +21,7 @@ import { SupportButtonTwo } from './TopNavBarRouting/SupportComponent/ButtonTwoC
 import { TagContentType } from '@angular/compiler';
 import { TagsButton } from './SideBarRouting/TagsComponent/TagsButtonComponent/tags-button.component';
 import { TopSellersButton } from './SideBarRouting/TopSellersComponent/TopSellersButtonComponent/top-sellers-button.component';
+import { TopSellersSideButton } from './SideBarRouting/TopSellersComponent/TopSellersSideButtonComponent/side-button.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { TopSellersButton } from './SideBarRouting/TopSellersComponent/TopSeller
     SupportButtonTwo,
     Tags,
     TagsButton,
-    TopSellersButton
+    TopSellersButton,
+    TopSellersSideButton
   ],
   imports: [
     BrowserModule,

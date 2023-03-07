@@ -1,7 +1,8 @@
-<div class="row" style="background-image: linear-gradient(180deg, #194561, #1B2838);">
+<div class="row" style="background-color: #1B2838;">
     <div class="col-2"></div>
     <div class="col-8">
-        <div class="row">
+        <div class="row" style="background-image: linear-gradient(0deg, #27516baa, #1B2838); margin-bottom: 2%;">
+            <app-top-navigation-two style="margin-top: 1%; margin-bottom: 1%;"> </app-top-navigation-two>
             <h1 style="color: aliceblue;">TOP SELLERS</h1>
             <h5 style="color: #908c80">All Products</h5> 
         </div>
@@ -45,7 +46,33 @@
                     <app-top-seller-button image={{button.image}} title={{button.title}} date={{button.date}} price={{button.price}}></app-top-seller-button>
                 </li>
             </div>
-            <div class="col-3"></div>
+            <div class="col-3">
+                <div class="container" style="border: 1px solid; border-color: #323e4c; margin-bottom: 1%;">
+                    <div class="row" style="background-color: #323e4c; color: aliceblue;">Narrow by Price</div>
+                    <div class="row">
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="65" value="65" class="slider" id="myRange" style="width:100%;">
+                        </div>
+                        <h6 style="color: aliceblue;">Any Price</h6>
+                        <hr class="hr" style="color: aliceblue;"/>
+                        <li *ngFor="let item of price">
+                            <app-side-button text={{item.text}}></app-side-button>
+                        </li>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row" style="background-color: #323e4c; color: aliceblue;">Narrow by tag</div>
+                    <div class="row">
+                        <li *ngFor="let item of price">
+                            <app-side-button text={{item.text}}></app-side-button>
+                        </li>
+                    </div>
+                </div>
+                
+            
+
+                
+            </div>
         </div>
         
     </div>
