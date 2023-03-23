@@ -22,6 +22,8 @@ import { TagContentType } from '@angular/compiler';
 import { TagsButton } from './SideBarRouting/TagsComponent/TagsButtonComponent/tags-button.component';
 import { TopSellersButton } from './SideBarRouting/TopSellersComponent/TopSellersButtonComponent/top-sellers-button.component';
 import { TopSellersSideButton } from './SideBarRouting/TopSellersComponent/TopSellersSideButtonComponent/side-button.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProfileData } from './TopNavigation/profile-bar/profile-data.component';
 
 @NgModule({
   declarations: [
@@ -44,11 +46,13 @@ import { TopSellersSideButton } from './SideBarRouting/TopSellersComponent/TopSe
     Tags,
     TagsButton,
     TopSellersButton,
-    TopSellersSideButton
+    TopSellersSideButton,
+    ProfileData
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

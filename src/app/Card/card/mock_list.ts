@@ -87,16 +87,16 @@ export const mock_list = [
     {
         image: "assets/rogue_like_rogue_lite.png",
         type: "ROGUE-LIKE",
-        color: "#background-image: linear-gradient(0deg, #006401, transparent);"
+        color: "background-image: linear-gradient(0deg, #006401, transparent);"
     },
     {
         image: "assets/action.png",
         type: "ACTION",
-        color: "#background-image: linear-gradient(0deg, #018989, transparent);"
+        color: "background-image: linear-gradient(0deg, #018989, transparent);"
     },
     {
         image: "assets/all_sports.png",
         type: "ALL SPORTS",
-        color: "#background-image: linear-gradient(0deg, #880189, transparent);"
+        color: "background-image: linear-gradient(0deg, #880189, transparent);"
     }
 ] 

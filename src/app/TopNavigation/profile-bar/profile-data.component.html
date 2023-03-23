@@ -1,0 +1,44 @@
+<nav class="navbar navbar-dark" style="background-color: #171A21;">
+  <div class="row" style="width: 100%; height: min-content;">
+    <div class="col-9"></div>
+    <div class="col-3">
+      <div class="row">
+        <div class="col-6"></div>
+        <div class="col-2">
+          <button type="button" class="border-0" style="background-color: dimgray;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+              <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+            </svg>
+            Install Steam 
+          </button>
+        </div>
+        <div class="col-1">
+          <button class="border-0" style="background-color: #171A21;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#e5e5e5" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="col-2">
+          <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle border-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: transparent;">
+              {{profileData?.username}}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">View profile</a>
+              <a class="dropdown-item" href="#">Account details</a>
+              <a class="dropdown-item" href="#">Logout: {{profileData?.username}}</a>
+              <a class="dropdown-item" href="#">Preferences</a>
+              <a class="dropdown-item" href="#">Highest Price</a>
+              <a class="dropdown-item" href="#">Change language</a>
+            </div>
+        </div>
+        </div>
+        <div class="col-1">
+          <img src={{profileData?.photo}} alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

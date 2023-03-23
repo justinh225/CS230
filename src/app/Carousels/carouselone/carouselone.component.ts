@@ -11,6 +11,7 @@ export class CarouseloneComponent {
   cards: CardModel [] = [];
 
   constructor() {
+
     for(var card of mock_list) {
       console.log(card);
       this.cards.push(card);
