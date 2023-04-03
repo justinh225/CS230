@@ -1,20 +1,35 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { CardModel } from 'src/app/Card/card/card-model.model';
-import { mock_list } from 'src/app/Card/card/mock_list';
+import { ProfileData } from 'src/app/TopNavigation/profile-bar/profile-data.component';
 
 @Component({
   selector: 'app-carouselone',
   templateUrl: './carouselone.component.html',
   styleUrls: ['./carouselone.component.css']
 })
-export class CarouseloneComponent {
+export class CarouseloneComponent implements OnInit {
   cards: CardModel [] = [];
 
-  constructor() {
+  constructor(private http: HttpClient) {}
 
-    for(var card of mock_list) {
-      console.log(card);
-      this.cards.push(card);
-    }
+  ngOnInit(): void {
+    console.log("Sending get request...");
+    this.getProfileData();
+    console.log("Registering ProfileData as subscriber");
+    this.showProfileData();
+  }
+
+  getProfileData() {
+    return this.http.get<CardModel[]>('https://cs230-f05ab-default-rtdb.firebaseio.com/home-screen-cards.json');
+  }
+
+  showProfileData() {
+    this.getProfileData().subscribe((data: CardModel[]) => {
+      for (var card of data) {
+        console.log(card);
+        this.cards.push(card);
+      }
+    })
   }
 }
