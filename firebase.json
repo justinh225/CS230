@@ -3,7 +3,7 @@
     "source": "functions"
   },
   "hosting": {
-    "public": "fist/cs230",
+    "public": "dist/cs230",
     "ignore": [
       "firebase.json",
       "**/.*",
