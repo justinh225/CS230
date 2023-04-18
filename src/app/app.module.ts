@@ -24,6 +24,13 @@ import { TopSellersButton } from './SideBarRouting/TopSellersComponent/TopSeller
 import { TopSellersSideButton } from './SideBarRouting/TopSellersComponent/TopSellersSideButtonComponent/side-button.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileData } from './TopNavigation/profile-bar/profile-data.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AddGame } from './AddGame/add-game.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -47,12 +54,17 @@ import { ProfileData } from './TopNavigation/profile-bar/profile-data.component'
     TagsButton,
     TopSellersButton,
     TopSellersSideButton,
-    ProfileData
+    ProfileData,
+    AddGame,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase()),
+    AngularFireModule.initializeApp(environment.firebase),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "cs230-f05ab"
+  },
+  "targets": {
+    "cs230-f05ab": {
+      "hosting": {
+        "CS230": [
+          "cs230-f05ab"
+        ]
+      }
+    }
   }
 }

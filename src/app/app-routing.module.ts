@@ -6,6 +6,7 @@ import { NowAvailableOnSteamComponent } from './SideBarRouting/NowAvailableCompo
 import { Tags } from './SideBarRouting/TagsComponent/tags.component';
 import { TopSellers } from './SideBarRouting/TopSellersComponent/top-sellers.component';
 import { Support } from './TopNavBarRouting/SupportComponent/support.component';
+import { AddGame } from './AddGame/add-game.component';
 
 
 
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path: 'Support', component: Support},
   {path: 'Tags', component: Tags},
   {path: 'Top-Sellers', component: TopSellers},
-  {path: 'New-Releases', component: NewReleases}
+  {path: 'New-Releases', component: NewReleases},
+  {path: 'admin', component: AddGame}
 ];
 
 @NgModule({
