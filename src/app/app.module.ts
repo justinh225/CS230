@@ -32,6 +32,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AddGame } from './AddGame/add-game.component';
 import { FormsModule } from '@angular/forms';
 import { GameCard } from './GameCard/game-card.component';
+import { CarouselTwo } from './Carousels/crouseltwo/carouseltwo.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { GameCard } from './GameCard/game-card.component';
     TopSellersSideButton,
     ProfileData,
     AddGame,
-    GameCard
+    GameCard,
+    CarouselTwo
   ],
   imports: [
     BrowserModule,
