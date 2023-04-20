@@ -1,8 +1,7 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, Injectable, OnInit } from '@angular/core';
 import { CardModel } from 'src/app/Card/card/card-model.model';
-import { CardService } from 'src/app/Card/card/card.service';
-import { ProfileData } from 'src/app/TopNavigation/profile-bar/profile-data.component';
+import { GameCardService } from 'src/app/GameCard/game-card.service';
+import { GameCardModel } from 'src/app/GameCard/game-card.model.component';
 
 @Component({
   selector: 'app-carouseltwo',
@@ -10,14 +9,15 @@ import { ProfileData } from 'src/app/TopNavigation/profile-bar/profile-data.comp
   styleUrls: ['./carouseltwo.component.css']
 })
 export class CarouselTwo implements OnInit {
-  cards: CardModel [] = [];
+  gameCards: GameCardModel [] = [];
 
-  constructor(private cardService:CardService) {}
+  constructor(private cardService:GameCardService) {}
 
   ngOnInit(): void {
-    this.cardService.getCardList().subscribe((data: CardModel[]) => {
+    this.cardService.getCardList().subscribe((data: GameCardModel[]) => {
       for(var card of data) {
-        this.cards.push(card);
+        this.gameCards.push(card);
+        console.log(card);
       }
     })
   }

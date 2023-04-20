@@ -1,0 +1,41 @@
+<div class="container" style="color: aliceblue;">
+    <div class="row">
+    </div>
+    <div class="row"> Game Card
+        <div class="col-8">
+            <form #postForm="ngForm" (ngSubmit)="addGameCard(postForm.value)">
+                <div class="input-group">
+                    <span class="input-group-text">mainImg</span>
+                    <input type="text" class="form-control" ngModel name="mainImg">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">title</span>
+                    <input type="text" class="form-control" ngModel name="title">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">tile1</span>
+                    <input type="text" class="form-control" ngModel name="tile1">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">tile2</span>
+                    <input type="text" class="form-control" ngModel name="tile2">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">tile3</span>
+                    <input type="text" class="form-control" ngModel name="tile3">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">tile4</span>
+                    <input type="text" class="form-control" ngModel name="tile4">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">price</span>
+                    <input type="text" class="form-control" ngModel name="price">
+                </div>
+                <button class="btn" type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

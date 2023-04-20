@@ -1,9 +1,11 @@
-<div class="row" style="background-color: slategray;">
+<div class="carousel-item" >
+<div class="row" style="height: max-content;">
+<div class="row" style="background-color: #07111a;">
         <div class="col-8" style="padding: 0%;">
-            <img class="img-fluid" src="{{mainImg}}" alt="Card image cap">
+            <img class="img-fluid" src="assets/{{mainImg}}" alt="Card image cap">
         </div>
         <div class="col-4">
-            <div class="row"><div>{{title}}</div></div>
+            <div class="row" style="color: aliceblue;"><div>{{title}}</div></div>
             <div class="row">
                 <div class="col-6">
                     <img class="img-fluid mx-auto" style="max-width: 100%; max-height: 100%;"src="assets/{{tile1}}" alt="Card image cap">
@@ -20,7 +22,15 @@
                     <img lass="img-fluid" style="max-width: 100%; max-height: 100%;" src="assets/{{tile4}}" src="assets/jed_survival4.png" alt="Card image cap">
                 </div>
             </div>    
-            <div class="row">Now Available:</div>
-            <div class="row">${{price}}</div>
+            <div class="row" style="color: aliceblue;">Now Available:</div>
+            <div class="row" style="color: aliceblue;">${{price}}
+                <div class="row">
+                <div *ngIf="[windows]"><img class="img" src="assets/win.png" alt="Card image cap"></div>
+                   <div *ngIf="[mac]"><img class="img" src="assets/dec.png" alt="Card image cap"></div>
+                   <div *ngIf="[steamDeck]"><img class="img" src="assets/mac.png" alt="Card image cap"></div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+</div>

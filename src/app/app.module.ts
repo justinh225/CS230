@@ -29,7 +29,7 @@ import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 import { AngularFireModule } from '@angular/fire/compat';
-import { AddGame } from './AddGame/add-game.component';
+import { AddGame } from './Admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { GameCard } from './GameCard/game-card.component';
 import { CarouselTwo } from './Carousels/crouseltwo/carouseltwo.component';

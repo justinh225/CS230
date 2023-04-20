@@ -14,6 +14,10 @@ export class GameCard {
     @Input() tile3: string;
     @Input() tile4: string;
     @Input() price: number;
+    @Input() windows: boolean;
+    @Input() mac: boolean;
+    @Input() steamDeck: boolean;
+
 
     constructor() {
         this.mainImg = "";
@@ -23,5 +27,8 @@ export class GameCard {
         this.tile3 = "";
         this.tile4 = "";
         this.price = -1;
+        this.windows = false;
+        this.mac = false;
+        this.steamDeck = false;
     }
 }

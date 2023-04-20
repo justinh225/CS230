@@ -6,7 +6,7 @@ import { NowAvailableOnSteamComponent } from './SideBarRouting/NowAvailableCompo
 import { Tags } from './SideBarRouting/TagsComponent/tags.component';
 import { TopSellers } from './SideBarRouting/TopSellersComponent/top-sellers.component';
 import { Support } from './TopNavBarRouting/SupportComponent/support.component';
-import { AddGame } from './AddGame/add-game.component';
+import { AddGame } from './Admin/admin.component';
 
 
 
