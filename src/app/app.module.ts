@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopNavBarComponent } from './TopNavigation/top-nav-bar/top-nav-bar.component';
@@ -18,7 +17,6 @@ import { TopSellers } from './SideBarRouting/TopSellersComponent/top-sellers.com
 import { NewReleases } from './SideBarRouting/NewReleasesComponent/new-releases.component';
 import { SupportButton } from './TopNavBarRouting/SupportComponent/ButtonComponent/support-button.component';
 import { SupportButtonTwo } from './TopNavBarRouting/SupportComponent/ButtonTwoComponent/support-button-two.component';
-import { TagContentType } from '@angular/compiler';
 import { TagsButton } from './SideBarRouting/TagsComponent/TagsButtonComponent/tags-button.component';
 import { TopSellersButton } from './SideBarRouting/TopSellersComponent/TopSellersButtonComponent/top-sellers-button.component';
 import { TopSellersSideButton } from './SideBarRouting/TopSellersComponent/TopSellersSideButtonComponent/side-button.component';
@@ -27,12 +25,12 @@ import { ProfileData } from './TopNavigation/profile-bar/profile-data.component'
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
-import { AngularFireDatabase } from '@angular/fire/compat/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AddGame } from './Admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { GameCard } from './GameCard/game-card.component';
 import { CarouselTwo } from './Carousels/crouseltwo/carouseltwo.component';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -59,8 +57,10 @@ import { CarouselTwo } from './Carousels/crouseltwo/carouseltwo.component';
     ProfileData,
     AddGame,
     GameCard,
-    CarouselTwo
+    CarouselTwo,
+    AuthComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -70,6 +70,7 @@ import { CarouselTwo } from './Carousels/crouseltwo/carouseltwo.component';
     AngularFireModule.initializeApp(environment.firebase),
     FormsModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

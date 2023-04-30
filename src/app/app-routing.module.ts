@@ -7,18 +7,18 @@ import { Tags } from './SideBarRouting/TagsComponent/tags.component';
 import { TopSellers } from './SideBarRouting/TopSellersComponent/top-sellers.component';
 import { Support } from './TopNavBarRouting/SupportComponent/support.component';
 import { AddGame } from './Admin/admin.component';
-
-
+import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
-  {path: '', component: Home},
+  {path: '', component: AuthComponent},
   {path: 'Now-Available-On-Steam', component: NowAvailableOnSteamComponent},
   {path: 'Home', component: Home},
   {path: 'Support', component: Support},
   {path: 'Tags', component: Tags},
   {path: 'Top-Sellers', component: TopSellers},
   {path: 'New-Releases', component: NewReleases},
-  {path: 'admin', component: AddGame}
+  {path: 'admin', component: AddGame},
+  {path: 'auth', component: AuthComponent}
 ];
 
 @NgModule({
